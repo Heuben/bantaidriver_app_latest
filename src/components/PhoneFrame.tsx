@@ -14,7 +14,7 @@ import type { ModuleId } from '../types/app';
 const TABS: { id: ModuleId; label: string; Icon: typeof BikeIcon }[] = [
   { id: 'session', label: 'Ride', Icon: BikeIcon },
   { id: 'incident', label: 'Rescue', Icon: SirenIcon },
-  { id: 'hardware', label: 'Device', Icon: CpuIcon },
+  { id: 'hardware', label: 'Scan', Icon: CpuIcon },
   { id: 'comms', label: 'Comms', Icon: RadioIcon },
   { id: 'profile', label: 'Profile', Icon: UserIcon },
 ];
@@ -92,8 +92,12 @@ export function PhoneFrame({
                   return (
                     <li key={id} className="flex-1 relative flex justify-center">
                       {active ? (
-                        <span className="absolute -top-6 left-1/2 -translate-x-1/2 z-30 flex h-14 w-14 items-center justify-center rounded-full bg-safe text-white shadow-lg dark:bg-safe/80">
-                          <Icon size={24} strokeWidth={2.4} />
+                        <span
+                          className={
+                            `absolute -top-7 left-1/2 -translate-x-1/2 z-30 flex h-16 w-16 items-center justify-center rounded-full text-white shadow-lg bg-gradient-to-tr from-blue-500 to-sky-400`
+                          }
+                        >
+                          <Icon size={22} strokeWidth={2.6} />
                         </span>
                       ) : null}
 
