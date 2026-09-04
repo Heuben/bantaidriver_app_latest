@@ -40,7 +40,6 @@ export function PhoneFrame({
         {/* Status bar */}
         <div className="relative z-30 flex h-[54px] shrink-0 items-end justify-between px-8 pb-1.5 text-[15px] font-semibold text-black dark:text-white">
           <span>9:41</span>
-          <div className="absolute left-1/2 top-[9px] h-[32px] w-[110px] -translate-x-1/2 rounded-full bg-black" />
           <div className="flex items-center gap-1.5">
             <SignalGlyph />
             <WifiGlyph />
